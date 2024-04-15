@@ -1,0 +1,18 @@
+.home_img {
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    position: relative;
+}
+
+.title_home {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: absolute;
+    left: 30%;
+    font-size: 1.7rem;
+    color: #ffcb45;
+}

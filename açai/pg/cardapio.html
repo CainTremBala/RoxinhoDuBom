@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/src/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+
+    <title>RoxinhoDuBom</title>
+</head>
+<body>
+
+    <header>
+
+        <nav id="navbar">
+            <i class="fa-solid fa-ice-cream" id="nav_logo">   Roxinho Du Bom</i>
+
+            <ul id="nav_list">
+                <li class="nav_item active">
+                    <a href="/index.html">Inicio</a>
+                </li>
+            </ul>
+            <div class="btn_reserve">
+                <button class="btn_default">               
+                    <a href="/pg/cardapio.html">comprar agora</a>
+                </button>
+            </div>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav_item">
+                    <a href="#home">Inicio</a>
+                </li>
+            </ul>
+
+            <button class="btn_default">
+                Reserve aqui
+                <a href="/pg/cardapio.html"></a>
+            </button>
+
+
+        </div>
+
+    </header>
+
+
+    <form action="">
+
+        <div class="titulo" name="Monte seu açai">
+            <h1>Monte seu açai</h1>
+        </div>
+
+        <div class="select" name="copo">
+
+            <div id="category-select">
+                <label for="options-view-button">Tamanho do copo</label>
+                <input type="checkbox" id="options-view-button">
+
+                <div id="select-button">
+                    <div id="selected-value">Selecione o tamanho</div>
+
+                    <div id="chevrons">
+                        <i data-lucide="chevron-down"></i>
+                        <i data-lucide="chevron-up"></i>
+                    </div>
+                </div>
+            </div>
+            <ul id="options">
+
+                <li class="option">
+                    <input type="radio"
+                    name="category"
+                    value="350ml"
+                    data-label="350ml"
+                    >
+
+                    <i data-lucide="glass-water"></i> <!--icone-->
+                    <span class="label">350ml</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option">
+                    <input type="radio"
+                    name="category"
+                    value="500ml"
+                    data-label="500ml"
+                    >
+
+                    <i data-lucide="glass-water"></i> <!--icone-->
+                    <span class="label">500ml</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option">
+                    <input type="radio"
+                    name="category"
+                    value="700ml"
+                    data-label="700ml"
+                    >
+
+                    <i data-lucide="glass-water"></i> <!--icone-->
+                    <span class="label">700ml</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option">
+                    <input type="radio"
+                    name="category"
+                    value="1L"
+                    data-label="1L"
+                    >
+
+                    <i data-lucide="glass-water"></i> <!--icone-->
+                    <span class="label">1L</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+            </ul>
+        </div>
+
+        <div class="select2" name="sabor">
+
+            <div id="category-select2">
+                <label for="options-view-button2">Sabor</label>
+                <input type="checkbox" id="options-view-button2">
+
+                <div id="select-button2">
+                    <div id="selected-value2">Selecione o sabor</div>
+
+                    <div id="chevrons2">
+                        <i data-lucide="chevron-down"></i>
+                        <i data-lucide="chevron-up"></i>
+                    </div>
+                </div>
+            </div>
+            <ul id="options2">
+
+                <li class="option2">
+                    <input type="radio"
+                    name="category"
+                    value="Normal"
+                    data-label="Normal"
+                    >
+
+                    <i data-lucide="cherry"></i> <!--icone-->
+                    <span class="label2">Normal</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option2">
+                    <input type="radio"
+                    name="category"
+                    value="Morango"
+                    data-label="Morango"
+                    >
+
+                    <i data-lucide="nut"></i> <!--icone-->
+                    <span class="label2">Morango</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option2">
+                    <input type="radio"
+                    name="category"
+                    value="Banana"
+                    data-label="Banana"
+                    >
+
+                    <i data-lucide="banana"></i> <!--icone-->
+                    <span class="label2">Banana</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option2">
+                    <input type="radio"
+                    name="category"
+                    value="Menta"
+                    data-label="Menta"
+                    >
+
+                    <i data-lucide="hop"></i> <!--icone-->
+                    <span class="label2">Menta</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+            </ul>
+        </div>
+
+        <div class="select3" name="calda">
+
+            <div id="category-select3">
+                <label for="options-view-button3">Calda</label>
+                <input type="checkbox" id="options-view-button3">
+
+                <div id="select-button3">
+                    <div id="selected-value3">Selecione a calda</div>
+
+                    <div id="chevrons3">
+                        <i data-lucide="chevron-down"></i>
+                        <i data-lucide="chevron-up"></i>
+                    </div>
+                </div>
+            </div>
+            <ul id="options3">
+
+                <li class="option3">
+                    <input type="radio"
+                    name="category"
+                    value="Sem Calda"
+                    data-label="Sem Calda"
+                    >
+
+                    <i data-lucide="milk"></i> <!--icone-->
+                    <span class="label3">Sem Calda</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option3">
+                    <input type="radio"
+                    name="category"
+                    value="Chocolate"
+                    data-label="Chocolate"
+                    >
+
+                    <i data-lucide="milk"></i> <!--icone-->
+                    <span class="label3">Chocolate</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option3">
+                    <input type="radio"
+                    name="category"
+                    value="Morango"
+                    data-label="Morango"
+                    >
+
+                    <i data-lucide="milk"></i> <!--icone-->
+                    <span class="label3">Morango</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option3">
+                    <input type="radio"
+                    name="category"
+                    value="Leite condensado"
+                    data-label="Leite condensado"
+                    >
+
+                    <i data-lucide="milk"></i> <!--icone-->
+                    <span class="label3">Leite condensado</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option3">
+                    <input type="radio"
+                    name="category"
+                    value="Uva"
+                    data-label="Uva"
+                    >
+
+                    <i data-lucide="milk"></i> <!--icone-->
+                    <span class="label3">Uva</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option3">
+                    <input type="radio"
+                    name="category"
+                    value="Doce de leite"
+                    data-label="Doce de leite"
+                    >
+
+                    <i data-lucide="milk"></i> <!--icone-->
+                    <span class="label3">Doce de leite</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+            </ul>
+        </div>
+
+        <div class="select4" name="adc cima">
+
+            <div id="category-select4">
+                <label for="options-view-button4">Adicionais de cima</label>
+                <input type="checkbox" id="options-view-button4">
+
+                <div id="select-button4">
+                    <div id="selected-value4">Selecione os adicionais</div>
+
+                    <div id="chevrons4">
+                        <i data-lucide="chevron-down"></i>
+                        <i data-lucide="chevron-up"></i>
+                    </div>
+                </div>
+            </div>
+            <ul id="options4">
+
+                <li class="option4">
+                    <input type="radio"
+                    name="category"
+                    value="Leite ninho"
+                    data-label="Leite ninho"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label4">Leite Ninho</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option4">
+                    <input type="radio"
+                    name="category"
+                    value="Granola"
+                    data-label="Granola"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label4">Granola</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option4">
+                    <input type="radio"
+                    name="category"
+                    value="Amendoim"
+                    data-label="Amendoim"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label4">Amendoim</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option4">
+                    <input type="radio"
+                    name="category"
+                    value="Creme de leite ninho"
+                    data-label="Creme de leite ninho"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label4">Creme de leite Ninho</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option4">
+                    <input type="radio"
+                    name="category"
+                    value="Paçoca"
+                    data-label="Paçoca"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label4">Paçoca</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option4">
+                    <input type="radio"
+                    name="category"
+                    value="Chocoboll"
+                    data-label="Chocoboll"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label4">Chocoboll</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option4">
+                    <input type="radio"
+                    name="category"
+                    value="Sucrilho"
+                    data-label="Sucrilho"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label4">Sucrilho</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option4">
+                    <input type="radio"
+                    name="category"
+                    value="Jujuba"
+                    data-label="Jujuba"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label4">Jujuba</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option4">
+                    <input type="radio"
+                    name="category"
+                    value="Leite condensado"
+                    data-label="Leite condensado"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label4">Leite condensado</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option4">
+                    <input type="radio"
+                    name="category"
+                    value="M&M"
+                    data-label="M&M"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label4">M&M</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option4">
+                    <input type="radio"
+                    name="category"
+                    value="Frutas"
+                    data-label="Frutas"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label4">Frutas</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+            </ul>
+        </div>
+
+        <div class="select5" name="adc meio">
+
+            <div id="category-select5">
+                <label for="options-view-button5">Adicionais do meio</label>
+                <input type="checkbox" id="options-view-button5">
+
+                <div id="select-button5">
+                    <div id="selected-value5">Selecione os adicionais</div>
+
+                    <div id="chevrons5">
+                        <i data-lucide="chevron-down"></i>
+                        <i data-lucide="chevron-up"></i>
+                    </div>
+                </div>
+            </div>
+            <ul id="options5">
+
+                <li class="option5">
+                    <input type="radio"
+                    name="category"
+                    value="Igual o de cima"
+                    data-label="Igual o de cima"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label5">Igual o de cima</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+
+                <li class="option5">
+                    <input type="radio"
+                    name="category"
+                    value="Leite ninho"
+                    data-label="Leite ninho"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label5">Leite Ninho</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option5">
+                    <input type="radio"
+                    name="category"
+                    value="Granola"
+                    data-label="Granola"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label5">Granola</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option5">
+                    <input type="radio"
+                    name="category"
+                    value="Amendoim"
+                    data-label="Amendoim"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label5">Amendoim</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option5">
+                    <input type="radio"
+                    name="category"
+                    value="Creme de leite ninho"
+                    data-label="Creme de leite ninho"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label5">Creme de leite Ninho</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option5">
+                    <input type="radio"
+                    name="category"
+                    value="Paçoca"
+                    data-label="Paçoca"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label5">Paçoca</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option5">
+                    <input type="radio"
+                    name="category"
+                    value="Chocoboll"
+                    data-label="Chocoboll"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label5">Chocoboll</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option5">
+                    <input type="radio"
+                    name="category"
+                    value="Sucrilho"
+                    data-label="Sucrilho"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label5">Sucrilho</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option5">
+                    <input type="radio"
+                    name="category"
+                    value="Jujuba"
+                    data-label="Jujuba"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label5">Jujuba</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option5">
+                    <input type="radio"
+                    name="category"
+                    value="Leite condensado"
+                    data-label="Leite condensado"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label5">Leite condensado</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option5">
+                    <input type="radio"
+                    name="category"
+                    value="M&M"
+                    data-label="M&M"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label5">M&M</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option5">
+                    <input type="radio"
+                    name="category"
+                    value="Frutas"
+                    data-label="Frutas"
+                    >
+
+                    <i data-lucide="circle-plus"></i> <!--icone-->
+                    <span class="label5">Frutas</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+            </ul>
+        </div>
+
+        <div class="titulo2" name="pessoais">
+            <h1>Suas informações pessoas</h1>
+        </div>
+
+        <div class="ifp" name="informações pessoais">
+
+                <p>Nome completo</p>
+                <input class="nomeC" type="text" name="" id="" placeholder="Digite seu nome completo" required>
+                <p>Numero de Telefone</p>
+                <input class="numeroC" type="number" name="" id="" placeholder="Digite seu numero" required>
+                <p>Rua</p>
+                <input class="ruaC" type="text" name="" id="" placeholder="Digite sua rua" required>
+                <p>Bairro</p>
+                <input class="bairroC" type="text" name="" id="" placeholder="Digite seu bairro" required>
+                <p>Numero residencial</p>
+                <input class="nrC" type="number" name="" id="" placeholder="Digite o N° da sua casa" required>
+        </div>
+        
+        <div class="select11" name="pagamento">
+
+            <div id="category-select11">
+                <label for="options-view-button11">Metodo de pagamento</label>
+                <input type="checkbox" id="options-view-button11">
+
+                <div id="select-button11">
+                    <div id="selected-value11">Selecione o metodo de pagamento</div>
+
+                    <div id="chevrons11">
+                        <i data-lucide="chevron-down"></i>
+                        <i data-lucide="chevron-up"></i>
+                    </div>
+                </div>
+            </div>
+            <ol id="options11">
+
+                <li class="option11">
+                    <input type="radio"
+                    name="category"
+                    value="Dinheiro"
+                    data-label="Dinheiro"
+                    >
+
+                    <i data-lucide="banknote"></i> <!--icone-->
+                    <span class="label11">Dinheiro</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option11">
+                    <input type="radio"
+                    name="category"
+                    value="Cartão de Debito"
+                    data-label="Cartão de Debito"
+                    >
+
+                    <i data-lucide="credit-card"></i> <!--icone-->
+                    <span class="label11">Cartão de Debito</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option11">
+                    <input type="radio"
+                    name="category"
+                    value="Cartão de Crédito"
+                    data-label="Cartão de Crédito"
+                    >
+
+                    <i data-lucide="credit-card"></i> <!--icone-->
+                    <span class="label11">Cartão de Crédito</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+
+                <li class="option11">
+                    <input type="radio"
+                    name="category"
+                    value="Pix"
+                    data-label="Pix"
+                    >
+
+                    <i data-lucide="banknote"></i> <!--icone-->
+                    <span class="label11">Pix</span> <!--texto-->
+                    <i data-lucide="check"></i> <!--icone de selecionado-->
+                </li>
+            </ol>
+        </div>
+
+    <button type="button" onclick="wpp()" class="btn_default">Enviar</button>
+    
+    </form>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="/src/script/cardapio.js"></script>
+
+</body>
+</html>
